@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Clean_Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfk-2M-tYZ">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tKc-4R-hmF">
+                                        <rect key="frame" x="16" y="23" width="382" height="768"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="P79-9h-aqV">
+                                                <rect key="frame" x="16" y="16" width="350" height="62"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhT-HC-Yhh" customClass="HeaderText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please sign in to continue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJf-iU-aZx" customClass="HeaderText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="42.5" width="350" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Ymh-ke-4a6" customClass="TextField" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="94" width="350" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="xps-hb-1vG" customClass="TextField" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="238" width="350" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="64" translatesAutoresizingMaskIntoConstraints="NO" id="neh-dt-1yS" customClass="HelperText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="382" width="350" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-14-HR9">
+                                                <rect key="frame" x="16" y="462" width="350" height="290"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="L64-aM-jKL" customClass="Button" customModule="Clean_Architecture" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <connections>
+                                                            <action selector="loginButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GaN-rl-AVI"/>
+                                                        </connections>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uy6-fu-FWm">
+                                                        <rect key="frame" x="0.0" y="138" width="350" height="14"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="14" id="emY-jq-NOX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-9x-kV5" customClass="Button" customModule="Clean_Architecture" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="162" width="350" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <connections>
+                                                            <action selector="registerButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Gto-8l-iZg"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="16" bottom="16" trailing="16"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tKc-4R-hmF" firstAttribute="centerY" secondItem="Cfk-2M-tYZ" secondAttribute="centerY" id="BsX-7G-nAg"/>
+                                    <constraint firstItem="tKc-4R-hmF" firstAttribute="leading" secondItem="Cfk-2M-tYZ" secondAttribute="leading" constant="16" id="FV2-F6-TMz"/>
+                                    <constraint firstAttribute="trailing" secondItem="tKc-4R-hmF" secondAttribute="trailing" constant="16" id="cC3-AC-9hV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cfk-2M-tYZ" secondAttribute="trailing" id="DZQ-Af-0g5"/>
+                            <constraint firstItem="Cfk-2M-tYZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LIY-Q0-RrF"/>
+                            <constraint firstItem="Cfk-2M-tYZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="M9O-UD-Z2H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Cfk-2M-tYZ" secondAttribute="bottom" id="VyG-ud-kiW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helperText" destination="neh-dt-1yS" id="5wY-kI-y9I"/>
+                        <outlet property="loginButton" destination="L64-aM-jKL" id="JBh-8E-daY"/>
+                        <outlet property="password" destination="xps-hb-1vG" id="yNM-8S-g4e"/>
+                        <outlet property="registerButton" destination="UxJ-9x-kV5" id="B2j-rb-ES2"/>
+                        <outlet property="username" destination="Ymh-ke-4a6" id="UCc-si-Gfb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="Clean_Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1u-Uw-v5a">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="200" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kkt-Ux-jGx">
+                                        <rect key="frame" x="16" y="143" width="382" height="528"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="96" translatesAutoresizingMaskIntoConstraints="NO" id="Ogx-5e-e1x" customClass="TextFieldHelperText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="96"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="96" translatesAutoresizingMaskIntoConstraints="NO" id="JdJ-1B-QbX" customClass="TextFieldHelperText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="108" width="382" height="96"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="96" translatesAutoresizingMaskIntoConstraints="NO" id="Nkg-Xh-J3E" customClass="TextFieldHelperText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="216" width="382" height="96"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="96" translatesAutoresizingMaskIntoConstraints="NO" id="t1V-Gm-tVR" customClass="TextFieldHelperText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="324" width="382" height="96"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="96" translatesAutoresizingMaskIntoConstraints="NO" id="1hu-L6-ozZ" customClass="TextFieldHelperText" customModule="Clean_Architecture" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="432" width="382" height="96"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Kkt-Ux-jGx" firstAttribute="leading" secondItem="V1u-Uw-v5a" secondAttribute="leading" constant="16" id="Se4-89-yoY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kkt-Ux-jGx" secondAttribute="trailing" constant="16" id="mFn-dD-POi"/>
+                                    <constraint firstItem="Kkt-Ux-jGx" firstAttribute="centerY" secondItem="V1u-Uw-v5a" secondAttribute="centerY" id="yvz-8E-yMM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="rJB-98-1bI" customClass="NavigationBar" customModule="Clean_Architecture" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V1u-Uw-v5a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ag5-Ep-ahK"/>
+                            <constraint firstItem="V1u-Uw-v5a" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ibo-gE-l7c"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="V1u-Uw-v5a" secondAttribute="bottom" id="Zet-8a-RxW"/>
+                            <constraint firstItem="rJB-98-1bI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gyJ-M9-ALe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V1u-Uw-v5a" secondAttribute="trailing" id="kne-Z5-9Rj"/>
+                            <constraint firstItem="rJB-98-1bI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ltg-lC-E2m"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rJB-98-1bI" secondAttribute="trailing" id="mOy-e4-toz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="1hu-L6-ozZ" id="SVv-Uq-uzy"/>
+                        <outlet property="email" destination="Nkg-Xh-J3E" id="9vI-Y4-sbC"/>
+                        <outlet property="name" destination="JdJ-1B-QbX" id="Rkl-C9-u5N"/>
+                        <outlet property="navigationBar" destination="rJB-98-1bI" id="3Nq-iA-9sB"/>
+                        <outlet property="password" destination="t1V-Gm-tVR" id="cpZ-GK-sUQ"/>
+                        <outlet property="username" destination="Ogx-5e-e1x" id="p6p-tI-uF8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
